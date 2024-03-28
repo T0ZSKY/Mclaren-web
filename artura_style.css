@@ -69,12 +69,12 @@ body {
 }
 
 .parallax1 {
-    background-image: url("./asset/image/mclaren_mcl38_livery_launch_render_desktop.jpg");
+    background-image: url("./asset/image/15907-McLarenArturaSpider.jpg");
     position: relative;
 }
 
 .parallax3 {
-    background-image: url("./asset/image/13157-McLarenSpecialOperationsrecreateslegendaryGulfliveryfor720Stocelebratetwoiconicbrandsandpersonalisationpossibilities.jpg");
+    background-image: url("./asset/image/15905-McLarenArturaSpider.jpg");
     position: relative;
 }
 
@@ -103,7 +103,7 @@ body {
 }
 
 .parallax4 {
-    background-color:#FFC43D;
+    background-color: rgb(37, 36, 36);
     position: relative;
     display: flex; /* Ajout de flex pour centrer verticalement */
     justify-content: left; /* Pour aligner à droite */
@@ -111,7 +111,7 @@ body {
 }
 
 .box-orange {
-    background-color: black;
+    background-color: #ffbb3d;
     width: 800px; /* Ajuster la largeur si nécessaire */
     height: 800px; /* Ajuster la hauteur si nécessaire */
     border-radius: 15px;
@@ -131,5 +131,5 @@ body {
     font-size: 30px;
     font-family: 'McLaren', sans-serif;
     margin-left: 20px;
-    margin-top: 10%;
+    margin-top: 25%;
 }
