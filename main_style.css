@@ -1,4 +1,135 @@
-body{
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+@font-face {
+    font-family: 'McLaren';
+    src: url('./asset/fonts/A-Space\ Black\ Demo.otf') format('opentype'); 
+}
+
+body {
+    background-color: gray;
+}
+
+.navbarre {
     background-color: black;
+    height: 100px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+
+.logo {
+    width: 150px;
+    height: 150px;
+    float: left;
+    margin-left: 50%;
+    margin-top: -25px;
+}
+
+.button {
+    float: right;
+    margin-top: 50px; 
+    margin-right: 500px;
+    font-size: 18px;
+    text-decoration: none;
+    color: #FFC43D;
+    font-family: 'McLaren', sans-serif;
+}
+
+.button_F1 {
+    float: left;
+    margin-top: 50px;
+    margin-left: -500px;
+    font-size: 18px;
+    text-decoration: none;
+    color: #FFC43D;
+    font-family: 'McLaren', sans-serif;
+}
+
+.button:hover, .button_F1:hover {
+    transform: scale(1.3);
+    transition: transform 0.3s ease-in-out;
+}
+
+.main {
+    margin-top: 100px;
+}
+
+.parallax {
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax1 {
+    background-image: url("./asset/image/15907-McLarenArturaSpider.jpg");
+    position: relative;
+}
+
+.parallax3 {
+    background-image: url("./asset/image/15905-McLarenArturaSpider.jpg");
+    position: relative;
+}
+
+.text-overlay {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+    font-size: 30px;
+    font-family: 'McLaren', sans-serif;
+    z-index: 999;
+    opacity: 0;
+    animation: fade-in 2s forwards;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(0.5);
+    }
+    to {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1);
+    }
+}
+
+.parallax4 {
+    background-color: rgb(37, 36, 36);
+    position: relative;
+    display: flex; /* Ajout de flex pour centrer verticalement */
+    justify-content: left; /* Pour aligner à droite */
+    align-items: center; /* Pour centrer verticalement */
+}
+
+.box-orange {
+    background-color: #ffbb3d;
+    width: 800px; /* Ajuster la largeur si nécessaire */
+    height: 800px; /* Ajuster la hauteur si nécessaire */
+    border-radius: 15px;
+    margin-left: 30px;
+}
+
+.vroum_p {
+    height: 800px;
+    width: 800px;
+    border-radius: 15px;
+    position: absolute; /* Utiliser position absolue pour placer l'image */
+    right: 40px; /* Définir la distance souhaitée du bord droit */
+}
+
+.description {
+    color: white;
+    font-size: 30px;
+    font-family: 'McLaren', sans-serif;
+    margin-left: 20px;
+    margin-top: 25%;
 }
