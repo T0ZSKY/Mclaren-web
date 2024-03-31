@@ -6,7 +6,7 @@ document.getElementById("login-form").addEventListener("submit", function(event)
     var alertBox = document.getElementById("alert");
     var alertMessage = document.getElementById("alert-message");
 
-    if (username === "Tom" && password === "Admin") {
+    if (username === "Tom" && password === "Tom") {
         window.location.href = "./main.html";
     } else {
         alertMessage.textContent = "Nom d'utilisateur ou mot de passe incorrect.";
