@@ -1,0 +1,29 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+    background-color: #f2f2f2; /* Fond gris */
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; /* Police inspirée du style Apple */
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 1; /* Pour afficher le texte au-dessus des carrés animés */
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #333; /* Couleur du texte foncé */
+}
+
+p {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #666; /* Couleur du texte plus claire */
+}
